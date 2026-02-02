@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compost Critters - Food Ark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Decorative Elements -->
+    <div class="veggie-decoration veggie-1">🥕</div>
+    <div class="veggie-decoration veggie-2">🌽</div>
+    <div class="veggie-decoration veggie-3">🥦</div>
+    <div class="veggie-decoration veggie-4">🍅</div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Compost Critters</div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#" class="nav-link" data-page="mission">Our Mission</a></li>
+            <li><a href="#" class="nav-link" data-page="critters">Critters</a></li>
+            <li><a href="#" class="nav-link" data-page="connect">Connect</a></li>
+            <li><a href="#" class="nav-link" data-page="challenges">Challenges</a></li>
+            <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Compost Critters</h1>
+                <h2 class="hero-subtitle">Food Ark</h2>
+            </div>
+            <div class="hero-image">
+                <svg class="character-img" viewBox="0 0 300 350" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Boy character with compost box -->
+                    <g id="boy">
+                        <!-- Hair -->
+                        <ellipse cx="150" cy="80" rx="60" ry="50" fill="#FF8C42"/>
+                        <path d="M 110 70 Q 120 50 140 60 Q 150 40 160 60 Q 180 50 190 70" fill="#FF8C42"/>
+                        
+                        <!-- Head -->
+                        <circle cx="150" cy="100" r="50" fill="#FFD4A3"/>
+                        
+                        <!-- Eyes -->
+                        <circle cx="135" cy="95" r="8" fill="#3D5A3C"/>
+                        <circle cx="165" cy="95" r="8" fill="#3D5A3C"/>
+                        <circle cx="137" cy="93" r="3" fill="white"/>
+                        <circle cx="167" cy="93" r="3" fill="white"/>
+                        
+                        <!-- Smile -->
+                        <path d="M 130 110 Q 150 120 170 110" stroke="#3D5A3C" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        
+                        <!-- Body (green shirt) -->
+                        <rect x="120" y="145" width="60" height="70" rx="10" fill="#6B9F5E"/>
+                        
+                        <!-- Arms -->
+                        <ellipse cx="110" cy="170" rx="15" ry="35" fill="#6B9F5E" transform="rotate(-20 110 170)"/>
+                        <ellipse cx="190" cy="170" rx="15" ry="35" fill="#6B9F5E" transform="rotate(20 190 170)"/>
+                        
+                        <!-- Hands -->
+                        <circle cx="105" cy="200" r="12" fill="#FFD4A3"/>
+                        <circle cx="195" cy="200" r="12" fill="#FFD4A3"/>
+                        
+                        <!-- Shorts (blue) -->
+                        <rect x="125" y="215" width="50" height="40" rx="8" fill="#4A90A4"/>
+                        
+                        <!-- Legs -->
+                        <rect x="130" y="250" width="15" height="50" rx="7" fill="#FFD4A3"/>
+                        <rect x="155" y="250" width="15" height="50" rx="7" fill="#FFD4A3"/>
+                        
+                        <!-- Shoes -->
+                        <ellipse cx="137" cy="305" rx="18" ry="10" fill="#E8E8E8"/>
+                        <ellipse cx="162" cy="305" rx="18" ry="10" fill="#E8E8E8"/>
+                        
+                        <!-- Compost box -->
+                        <rect x="80" y="180" width="50" height="45" rx="5" fill="#FF6B35"/>
+                        <text x="105" y="207" font-family="'Fredoka', sans-serif" font-size="14" font-weight="700" fill="white" text-anchor="middle">COMPOST</text>
+                        <text x="105" y="222" font-family="'Fredoka', sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle">CRITTERS</text>
+                        
+                        <!-- Red panda in box -->
+                        <ellipse cx="105" cy="165" rx="12" ry="10" fill="#D84315"/>
+                        <circle cx="105" cy="158" r="8" fill="#D84315"/>
+                        <circle cx="100" cy="155" r="3" fill="#4A2511"/>
+                        <circle cx="110" cy="155" r="3" fill="#4A2511"/>
+                        <ellipse cx="98" cy="148" rx="4" ry="6" fill="#D84315"/>
+                        <ellipse cx="112" cy="148" rx="4" ry="6" fill="#D84315"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </div>
+
+    <!-- Our Mission Page -->
+    <div id="mission" class="page">
+        <section>
+            <h2 class="section-title" style="color: var(--green-primary);">Our Mission</h2>
+            <div class="mission-container">
+                <div class="mission-card">
+                    <h3>🌟 Critters Purpose</h3>
+                    <ul>
+                        <li>Eco-friendly plant and compost kits in cute, animal-themed boxes</li>
+                        <li>Designed to be fun, hands-on, and engaging for young children</li>
+                        <li>Teaches kids how to grow plants and compost their own food</li>
+                        <li>Encourages understanding of sustainability and eco-friendly habits</li>
+                        <li>Aims to promote environmental awareness and positive daily practices</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <h3>⚠️ Problems Today</h3>
+                    <ul>
+                        <li><strong>Wastefulness:</strong> Every day, people unknowingly throw their leftovers in the bin. We aim to address food insecurity.</li>
+                        <li><strong>Accessibility:</strong> Understanding and combating food insecurity can be challenging for newer generations.</li>
+                        <li><strong>Education:</strong> People don't know how to use the food they normally waste in a meaningful way.</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <h3>💡 The Solution</h3>
+                    <ul>
+                        <li><strong>Repurpose:</strong> We will begin to repurpose wasted food from local communities like schools and farms by making compost</li>
+                        <li><strong>Accessibility:</strong> We provide an easy way for anyone to support fighting food insecurity.</li>
+                        <li><strong>The Next Generation:</strong> Our compost-making kits not only provide an educational tool for the next generation to teach them how to utilize the food they waste.</li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <h3>👥 Our Audience</h3>
+                    <ul>
+                        <li>Our target audience is children, as we hope to deepen their connection with the environment.</li>
+                        <li>Through these cute kits, our aim is to provide kids exposure to sustainability at a young age to foster interest, familiarity, and positive habits as they grow up.</li>
+                        <li><strong>We hope to share this project with:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 2rem;">
+                                <li>Education Centers</li>
+                                <li>Local Gardens</li>
+                                <li>Elementary Schools</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mission-card">
+                    <h3>♻️ Why Compost</h3>
+                    <ul>
+                        <li>Our Compost is a more sustainable option that tackles food waste compared to other options.</li>
+                        <li><strong>It is made from:</strong>
+                            <ul style="margin-top: 0.5rem; padding-left: 2rem;">
+                                <li>"Unsellable" farm food</li>
+                                <li>"Unwanted" school food</li>
+                                <li>"Unutilized" food</li>
+                            </ul>
+                        </li>
+                        <li>We transform food waste into a resource, returning nutrients to the earth to grow new food instead of letting them end up in a landfill.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Critters Page -->
+    <div id="critters" class="page">
+        <section class="critters-section">
+            <h2 class="section-title" style="color: var(--yellow-accent);">Unlock your Character!</h2>
+            <button class="redeem-btn">Redeem</button>
+            
+            <div class="critter-display">
+                <div class="critter-character">
+                    <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Chelsea the Chicken -->
+                        <g id="chelsea">
+                            <!-- Body -->
+                            <ellipse cx="100" cy="150" rx="60" ry="70" fill="white" stroke="#3D5A3C" stroke-width="2"/>
+                            
+                            <!-- Wing -->
+                            <ellipse cx="50" cy="140" rx="30" ry="40" fill="white" stroke="#3D5A3C" stroke-width="2" transform="rotate(-20 50 140)"/>
+                            
+                            <!-- Head -->
+                            <circle cx="100" cy="80" r="40" fill="white" stroke="#3D5A3C" stroke-width="2"/>
+                            
+                            <!-- Comb -->
+                            <path d="M 90 45 Q 95 35 100 45 Q 105 35 110 45" fill="#D32F2F" stroke="#3D5A3C" stroke-width="2"/>
+                            
+                            <!-- Beak -->
+                            <path d="M 100 85 L 115 90 L 100 95 Z" fill="#FFB300"/>
+                            
+                            <!-- Eyes -->
+                            <circle cx="90" cy="75" r="5" fill="#3D5A3C"/>
+                            <circle cx="110" cy="75" r="5" fill="#3D5A3C"/>
+                            <circle cx="92" cy="73" r="2" fill="white"/>
+                            <circle cx="112" cy="73" r="2" fill="white"/>
+                            
+                            <!-- Wattle -->
+                            <ellipse cx="100" cy="100" rx="8" ry="12" fill="#D32F2F"/>
+                            
+                            <!-- Legs -->
+                            <line x1="85" y1="220" x2="85" y2="250" stroke="#FFB300" stroke-width="4"/>
+                            <line x1="115" y1="220" x2="115" y2="250" stroke="#FFB300" stroke-width="4"/>
+                            
+                            <!-- Feet -->
+                            <path d="M 75 250 L 85 250 L 80 260 Z" fill="#FFB300"/>
+                            <path d="M 85 250 L 95 250 L 90 260 Z" fill="#FFB300"/>
+                            <path d="M 105 250 L 115 250 L 110 260 Z" fill="#FFB300"/>
+                            <path d="M 115 250 L 125 250 L 120 260 Z" fill="#FFB300"/>
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="critter-info">
+                    <div class="critter-name">CHELSEA THE CHICKEN</div>
+                    
+                    <div class="critter-dialogue">
+                        Cluck and hello! I'm Chelsea. People often ask me how my tomatoes get so red and juicy. The secret isn't in a store—it's right here in the nest!
+                    </div>
+
+                    <div class="task-section">
+                        <div class="task-header">Daily Tasks</div>
+                        <ul class="task-list">
+                            <li class="task-item">
+                                <input type="checkbox" id="moisture">
+                                <label for="moisture">Check moisture</label>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="water">
+                                <label for="water">Water base</label>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="health">
+                                <label for="health">Health Inspection</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="task-section">
+                        <div class="task-header">Weekly Tasks</div>
+                        <ul class="task-list">
+                            <li class="task-item">
+                                <input type="checkbox" id="fertilize">
+                                <label for="fertilize">Fertilize</label>
+                            </li>
+                            <li class="task-item">
+                                <input type="checkbox" id="rotate">
+                                <label for="rotate">Rotate</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="task-section">
+                        <div class="task-header">Tracker</div>
+                        <p style="text-align: center; padding: 1rem; color: var(--text-dark); font-size: 1.1rem;">
+                            Track your composting progress here!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Connect Page -->
+    <div id="connect" class="page">
+        <section class="connect-section">
+            <h2 class="section-title" style="color: var(--blue-light);">Connect</h2>
+            <p class="connect-subtitle">Post your progress with other Companions!</p>
+            
+            <div class="posts-grid">
+                <div class="post-card">
+                    <div style="position: relative;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%234CAF50' width='400' height='300'/%3E%3Ccircle cx='100' cy='150' r='40' fill='%23E53935'/%3E%3Ccircle cx='200' cy='120' r='35' fill='%23E53935'/%3E%3Ccircle cx='280' cy='160' r='30' fill='%23E53935'/%3E%3Crect x='50' y='200' width='300' height='15' fill='%23795548'/%3E%3Ctext x='200' y='50' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3ETomato Garden%3C/text%3E%3C/svg%3E" alt="Tomatoes" class="post-image">
+                        <span class="post-heart">🤍</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-author">Kailyn</div>
+                        <div class="post-date">5/28/26</div>
+                        <div class="post-text">My tomatoes are almost ready for harvest!</div>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div style="position: relative;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%233E2723' width='400' height='300'/%3E%3Cellipse cx='200' cy='200' rx='120' ry='100' fill='%234E342E'/%3E%3Cpath d='M 150 140 Q 160 120 170 140' fill='%234CAF50'/%3E%3Cpath d='M 180 135 Q 190 115 200 135' fill='%234CAF50'/%3E%3Cpath d='M 210 140 Q 220 120 230 140' fill='%234CAF50'/%3E%3Ctext x='200' y='50' font-family='Arial' font-size='24' fill='%23FFF9C4' text-anchor='middle'%3EFirst Seedlings%3C/text%3E%3C/svg%3E" alt="Seedlings" class="post-image">
+                        <span class="post-heart">🤍</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-author">Vardhini</div>
+                        <div class="post-date">3/16/26</div>
+                        <div class="post-text">These are my leaves</div>
+                    </div>
+                </div>
+
+                <div class="post-card">
+                    <div style="position: relative;">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23795548' width='400' height='300'/%3E%3Crect x='50' y='100' width='300' height='150' rx='10' fill='%234E342E'/%3E%3Cpath d='M 100 120 L 110 140 L 90 140 Z' fill='%23FFA726'/%3E%3Cpath d='M 150 130 L 165 155 L 135 155 Z' fill='%23FFA726'/%3E%3Cpath d='M 200 125 L 212 145 L 188 145 Z' fill='%23FFEB3B'/%3E%3Ctext x='200' y='50' font-family='Arial' font-size='24' fill='white' text-anchor='middle'%3EComposting Journey%3C/text%3E%3C/svg%3E" alt="Composting" class="post-image">
+                        <span class="post-heart">🤍</span>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-author">Sathvika</div>
+                        <div class="post-date">7/12/26</div>
+                        <div class="post-text">First time learning how to compost!</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Challenges Page -->
+    <div id="challenges" class="page">
+        <section class="challenges-section">
+            <h2 class="section-title" style="color: var(--blue-light);">Challenges</h2>
+            <p class="challenges-subtitle">Take on some challenges and learn more about..</p>
+            
+            <div class="challenges-grid">
+                <div class="challenge-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23E8F5E9' width='400' height='250'/%3E%3Ccircle cx='100' cy='125' r='60' fill='%23FFEB3B'/%3E%3Ccircle cx='200' cy='125' r='60' fill='%234CAF50'/%3E%3Ccircle cx='300' cy='125' r='60' fill='%232196F3'/%3E%3Ctext x='200' y='220' font-family='Arial' font-size='32' fill='%233D5A3C' text-anchor='middle' font-weight='bold'%3EZero Waste%3C/text%3E%3C/svg%3E" alt="Zero Waste" class="challenge-image">
+                    <div class="challenge-content">
+                        <div class="challenge-title">Zero Waste</div>
+                        <div class="challenge-date">Jul 14, 2026</div>
+                        <a href="#" class="challenge-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23E1F5FE' width='400' height='250'/%3E%3Crect x='50' y='80' width='100' height='120' fill='%232196F3'/%3E%3Crect x='170' y='60' width='100' height='140' fill='%2303A9F4'/%3E%3Crect x='290' y='100' width='100' height='100' fill='%234FC3F7'/%3E%3Ctext x='200' y='220' font-family='Arial' font-size='32' fill='%232196F3' text-anchor='middle' font-weight='bold'%3EUpcycle Art%3C/text%3E%3C/svg%3E" alt="Upcycle Art" class="challenge-image">
+                    <div class="challenge-content">
+                        <div class="challenge-title">Upcycle Art</div>
+                        <div class="challenge-date">Jul 21, 2026</div>
+                        <a href="#" class="challenge-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23F1F8E9' width='400' height='250'/%3E%3Crect x='50' y='180' width='300' height='40' fill='%23795548'/%3E%3Cpath d='M 100 180 Q 100 140 120 140 L 120 180' fill='%234CAF50'/%3E%3Cpath d='M 180 180 Q 180 120 200 120 L 200 180' fill='%238BC34A'/%3E%3Cpath d='M 260 180 Q 260 150 280 150 L 280 180' fill='%239CCC65'/%3E%3Ctext x='200' y='50' font-family='Arial' font-size='32' fill='%234CAF50' text-anchor='middle' font-weight='bold'%3EGardening%3C/text%3E%3C/svg%3E" alt="Gardening" class="challenge-image">
+                    <div class="challenge-content">
+                        <div class="challenge-title">Gardening</div>
+                        <div class="challenge-date">Aug 15, 2026</div>
+                        <a href="#" class="challenge-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23FFF3E0' width='400' height='250'/%3E%3Crect x='50' y='100' width='300' height='100' rx='10' fill='%234E342E'/%3E%3Cpath d='M 100 120 L 110 140 L 90 140 Z' fill='%23FFA726'/%3E%3Cpath d='M 150 115 L 165 145 L 135 145 Z' fill='%23FFEB3B'/%3E%3Cpath d='M 250 118 L 262 142 L 238 142 Z' fill='%23FFA726'/%3E%3Ctext x='200' y='50' font-family='Arial' font-size='32' fill='%234E342E' text-anchor='middle' font-weight='bold'%3ECompost%3C/text%3E%3C/svg%3E" alt="Compost" class="challenge-image">
+                    <div class="challenge-content">
+                        <div class="challenge-title">Compost</div>
+                        <div class="challenge-date">Sep 1, 2026</div>
+                        <a href="#" class="challenge-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23FFF9C4' width='400' height='250'/%3E%3Ccircle cx='200' cy='125' r='80' fill='%23FF6F00'/%3E%3Crect x='150' y='80' width='30' height='40' fill='%23FFEB3B'/%3E%3Crect x='220' y='90' width='30' height='30' fill='%23FFEB3B'/%3E%3Ctext x='200' y='220' font-family='Arial' font-size='28' fill='%23FF6F00' text-anchor='middle' font-weight='bold'%3ESoup Kitchens%3C/text%3E%3C/svg%3E" alt="Soup Kitchens" class="challenge-image">
+                    <div class="challenge-content">
+                        <div class="challenge-title">Soup Kitchens</div>
+                        <div class="challenge-date">Oct 12, 2026</div>
+                        <a href="#" class="challenge-btn">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="challenge-card">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 250'%3E%3Crect fill='%23E8F5E9' width='400' height='250'/%3E%3Cpath d='M 50 200 L 100 150 L 150 170 L 200 130 L 250 160 L 300 120 L 350 150 L 350 200 Z' fill='%234CAF50'/%3E%3Ccircle cx='200' cy='90' r='30' fill='%23FFEB3B'/%3E%3Ctext x='200' y='230' font-family='Arial' font-size='28' fill='%234CAF50' text-anchor='middle' font-weight='bold'%3EFarmers Market%3C/text%3E%3C/svg%3E" alt="Farmers Market" class="challenge-image">
+                    <div class="challenge-content">
+                        <div class="challenge-title">Farmers Market</div>
+                        <div class="challenge-date">Nov 13, 2026</div>
+                        <a href="#" class="challenge-btn">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section>
+            <h2 class="section-title" style="color: var(--green-primary);">Contact Us</h2>
+            <div class="mission-card" style="max-width: 600px; margin: 0 auto;">
+                <h3>Get in Touch! 📬</h3>
+                <p style="font-size: 1.2rem; line-height: 1.8; margin-top: 1.5rem;">
+                    Have questions about Compost Critters? Want to bring our kits to your school or community center? 
+                    We'd love to hear from you!
+                </p>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--cream); border-radius: 15px;">
+                    <p style="font-size: 1.1rem; margin-bottom: 0.5rem;">
+                        <strong>Email:</strong> hello@compostcritters.com
+                    </p>
+                    <p style="font-size: 1.1rem;">
+                        <strong>Follow us on social media:</strong> @compostcritters
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
